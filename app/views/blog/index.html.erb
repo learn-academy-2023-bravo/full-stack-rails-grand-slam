@@ -1,6 +1,6 @@
-<h1> Bloging App </h1>
+<h1> Blogging App </h1>
 <ul>
   <% @blogs.each do |blog| %>
-  <li><%= blog.post %></li>
+  <li><%= link_to blog.title, blog_path(blog) %></li>
   <% end %>
 </ul>
